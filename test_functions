@@ -1,0 +1,285 @@
+#! /usr/bin/env python
+"""
+def sum(num1, num2): # Using sum as a built-in function and not user-defined
+    result = num1 + num2 # Bringing logic inside variable
+    return result # Laut chalein is logic ke saath
+print(sum(4, 9))
+
+
+"""
+
+import sys
+
+# a = 10
+# b = 72
+# c = sum((a, b))
+# print(c)
+
+
+# def greet(name):
+#     print("Hello", name)
+#     print("How are you")
+# greet("Maham")
+
+
+# def add_numbers(n1, n2):
+#     result = n1 + n2
+#     return result
+# number1 = 4.6
+# number2 = 5.817
+# # result = add_numbers(number1, number2)
+# print("The sum is", result)
+
+
+# def add_numbers(n1, n2):
+#     result = n1 + n2
+#     return result
+# #print(add_numbers(4.6, 5.8))
+
+
+
+# names = ["Maham", "Maria", "Elize", "Khurram", "Snowball"] 
+# length = len(names)
+# print("The length of the list is", length)
+
+
+
+# marks = [91, 88, 35, 40, 87, 22, 36, 74, 92, 13, 26, 76, 88]
+# length = len(marks)
+# print("The length of the list", length)
+
+
+# marks = [91, 88, 35, 40, 87, 22, 36, 74, 92, 13, 26, 76, 88]
+# marks_sum = sum(marks)
+# print("The total mark you got is", marks_sum , "out of 1000")
+
+
+
+#function to find average marks
+
+# def find_average_marks(marks):
+#     sum_of_marks = sum(marks)
+#     total_subjects = len(marks)
+#     average_marks = sum_of_marks / total_subjects
+#     return average_marks
+
+# # # Calculate the grade and return it
+# def compute_grade(average_marks):
+#     if average_marks >= 80:
+#         grade = "A"
+#     elif average_marks >= 60:
+#         grade = "B"
+#     elif average_marks >= 50:
+#         grade = "C"
+#     else:
+#         grade = "F"
+#     return grade
+
+
+# marks = [55, 64, 75, 80, 65]
+# average_marks = find_average_marks(marks)
+# print("Your average mark is", average_marks)
+
+# grade = compute_grade(average_marks)
+# print("Your grade is", grade)
+
+
+
+# def my_marks(marks):
+#     sum_of_marks = sum(marks)
+#     total_subjects = len(marks)
+#     average_marks = sum_of_marks / total_subjects
+#     return average_marks
+
+# def calculation(average_marks):
+#     if average_marks >=80:
+#         grade = "A"
+#     elif average_marks >= 60:
+#         grade = "B"
+#     elif average_marks >=50:
+#         grade = "C"
+#     else:
+#         grade = "F"
+#     return grade
+
+# # marks = [34, 74, 81, 55, 69]
+# # average_marks = my_marks(marks)
+# # print("Your average mark is", average_marks)
+
+# # grade = calculation(average_marks)
+# # print("Your grade is", grade)
+
+# print(calculation(57))
+
+
+# def max( x, y ):  #Exercise 1 
+#     if x > y:
+#         return x
+#     return y
+# def max_three( x, y, z ):
+#     return max( x, max( y, z ) )
+# print(max_three(4, 7, 3))
+   
+
+# def sum(numbers): #Exercise 2
+#     total = 0
+#     for x in numbers:
+#         total += x
+#     return total
+# print(sum((8, 2, 3, 0, 7)))
+
+# def mult(numbers): #Exercise 3
+#     total = 4
+#     for x in numbers:
+#         total *= x
+#     return total
+# print(mult((8, 2, 3, -1, 7)))
+
+
+# def doubler(number):
+#     result = number * 2
+#     return result
+# # print(doubler(7))
+
+# if __name__ == '__main__':
+#     # Retrieve command line input
+#     try:
+#         input = float(sys.argv[1])
+#     except (IndexError, ValueError) as e:
+#         # Indicates no command line parameter was provided
+#         print("You must provide a number as a parameter to this script")
+#         print("Example: ")
+#         print("  python example1.py 12")
+#         sys.exit(1)
+
+#         answer = doubler(input)
+#         print(answer)
+
+
+
+
+
+
+# def double(numbers): # use debugger to und8erstand mathematical functions
+#     total = 3
+#     for x in numbers:
+#         total -= x
+#     return total
+# print(double((2, 5)))
+
+
+# 3-2 = 1
+# 1-5 = -4
+
+
+
+# def string_reverse(str1): #Exercise 4
+#     rstr1 = ''
+#     index = len(str1)
+#     while index > 0:
+#         rstr1 += str1[ index - 1 ]
+#         index = index - 1
+#     return rstr1
+# print(string_reverse('1234abcde'))
+
+
+
+# def string_reverse(str1):
+#     rstr1 = ''
+#     index = len(str1)
+#     while index > 0:
+#         rstr1 += str1[ index - 1 ]
+#         index = index - 1
+#     return rstr1
+# print(string_reverse('abcdef09876'))
+
+
+
+# def string_reverse(str1):
+#     rstr1 = ''
+#     index = len(str1)
+#     while index > 0:
+#         rstr1 += str1[ index - 1 ]
+#         index = index - 1
+#     return rstr1
+# print(string_reverse('abcd1234'))
+
+# def string_reverse(str1):
+#     rstr1 = ''
+#     index = len(str1)
+#     while index > 0:
+#         rstr1 += str1[index - 1]
+#         index = index - 1 
+#     return rstr1
+# print(string_reverse("nawamarruhk"))
+
+
+# def mult(numbers): #Exercise 3
+#     total = 4
+#     for x in numbers:
+#         total *= x
+#     return total
+# print(mult((8, 2, 3, -1, 7)))
+
+# def factorial(n): # Exercise 5
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+# n=int(input("Give an argument : "))
+# print(factorial(n))
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
